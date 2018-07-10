@@ -19,22 +19,15 @@
     outline: 0;
   }
   
-  .no-touch &:hover {
-    background: white;
-    color: black;
-  }
-  .touch &:active {
-    background: white;
-    color: black;
-  }
-  
   // **** sizes ****
   &--small {
     font-size: vh(16);
     padding: vh(11) vh(16) vh(12);
   }
   &--big {
-    padding: 20px;
+    padding: 1rem 2rem;
+		text-transform: none;
+		border-radius: 0.25rem;
   }
   
   // **** themes  ****
@@ -60,6 +53,17 @@
       border-color: transparent;
     }
   }
+  &--dark {
+    color: $white;
+    background: $dark;
+    border-color: transparent;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $black;
+      border-color: transparent;
+    }
+  }
   &--primary-outline {
     color: $primary;
     background: transparent;
@@ -78,6 +82,16 @@
     {hover-focus-active} {
       color: $white;
       background: $black;
+    }
+  }
+  &--dark-outline {
+    color: $dark;
+    background: transparent;
+    border-color: $dark;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $dark;
     }
   }
   
