@@ -21,11 +21,11 @@ block content
 								.l-flex-noBottom
 									each v, key in item.vs
 										.l-col-3
-											.test-card
+											.test-card.js-test-card
 												.test-card__img: img(src=v.img, alt="")
 												.test-card__content
 													.test-card__text !{key+1 + ". " + v.text}
-													.btn.btn--small.test-card__ctrl.js-test-ctrl(data-key=v.value) Выбрать
+													.btn.btn--small.btn--dark-outline.test-card__ctrl.js-test-ctrl(data-key=v.value) Выбрать
 				.test-scale
 					.test-scale__line
 					.test-scale__pin-wrapper

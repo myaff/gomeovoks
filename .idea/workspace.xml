@@ -2,38 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e83e0ec-73cd-479b-95f7-220c7a641d7e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/img/hand-card.png" afterPath="$PROJECT_DIR$/build/img/hand-card.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/img/hand-gomeovoks.png" afterPath="$PROJECT_DIR$/build/img/hand-gomeovoks.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/img/hand.png" afterPath="$PROJECT_DIR$/build/img/hand.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/css/main.css" afterPath="$PROJECT_DIR$/build/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/data/data.json" afterPath="$PROJECT_DIR$/build/data/data.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/img/svg/sprite.symbol.html" afterPath="$PROJECT_DIR$/build/img/svg/sprite.symbol.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/img/svg/sprite.symbol.js" afterPath="$PROJECT_DIR$/build/img/svg/sprite.symbol.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/main.js" afterPath="$PROJECT_DIR$/build/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/footer.html" afterPath="$PROJECT_DIR$/parts/footer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/header.html" afterPath="$PROJECT_DIR$/parts/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/vendor/TweenMax.min.js" afterPath="$PROJECT_DIR$/build/js/vendor/TweenMax.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/vendor/animation.gsap.min.js" afterPath="$PROJECT_DIR$/build/js/vendor/animation.gsap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/vendor/jquery-3.2.1.min.js" afterPath="$PROJECT_DIR$/build/js/vendor/jquery-3.2.1.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/vendor/jquery.ba-throttle-debounce.js" afterPath="$PROJECT_DIR$/build/js/vendor/jquery.ba-throttle-debounce.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/js/vendor/owl.carousel.min.js" afterPath="$PROJECT_DIR$/build/js/vendor/owl.carousel.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/product.html" afterPath="$PROJECT_DIR$/parts/product.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parts/warn.html" afterPath="$PROJECT_DIR$/parts/warn.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result-green.html" afterPath="$PROJECT_DIR$/result-green.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result-orange.html" afterPath="$PROJECT_DIR$/result-orange.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result-red.html" afterPath="$PROJECT_DIR$/result-red.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/result-yellow.html" afterPath="$PROJECT_DIR$/result-yellow.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/data/data.json" afterPath="$PROJECT_DIR$/src/data/data.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/share.js" afterPath="$PROJECT_DIR$/src/js/components/share.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main.js" afterPath="$PROJECT_DIR$/src/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/parts/header.pug" afterPath="$PROJECT_DIR$/src/pug/parts/header.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/components/test.js" afterPath="$PROJECT_DIR$/src/js/components/test.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/parts/product.pug" afterPath="$PROJECT_DIR$/src/pug/parts/product.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/result-green.pug" afterPath="$PROJECT_DIR$/src/pug/result-green.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/result-orange.pug" afterPath="$PROJECT_DIR$/src/pug/result-orange.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/result-red.pug" afterPath="$PROJECT_DIR$/src/pug/result-red.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/result-yellow.pug" afterPath="$PROJECT_DIR$/src/pug/result-yellow.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/template.pug" afterPath="$PROJECT_DIR$/src/pug/template.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/components/chm.styl" afterPath="$PROJECT_DIR$/src/styl/components/chm.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/components/header.styl" afterPath="$PROJECT_DIR$/src/styl/components/header.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/pages/home.styl" afterPath="$PROJECT_DIR$/src/styl/pages/home.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/pages/result.styl" afterPath="$PROJECT_DIR$/src/styl/pages/result.styl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template.html" afterPath="$PROJECT_DIR$/template.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/pug/test.pug" afterPath="$PROJECT_DIR$/src/pug/test.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/base/buttons.styl" afterPath="$PROJECT_DIR$/src/styl/base/buttons.styl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styl/components/test.styl" afterPath="$PROJECT_DIR$/src/styl/components/test.styl" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -92,7 +80,7 @@
       <file leaf-file-name="data.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/data/data.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1068">
+            <state relative-caret-position="319">
               <caret line="184" column="388" lean-forward="false" selection-start-line="184" selection-start-column="388" selection-end-line="184" selection-end-column="388" />
               <folding />
             </state>
@@ -402,25 +390,26 @@
       <workItem from="1531229124932" duration="20000" />
       <workItem from="1531231756052" duration="80000" />
       <workItem from="1531232015276" duration="239000" />
+      <workItem from="1531233407362" duration="61000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4851000" />
+    <option name="totallyTimeSpent" value="4912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27609682" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2806354" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -827,7 +816,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/data/data.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1068">
+        <state relative-caret-position="319">
           <caret line="184" column="388" lean-forward="false" selection-start-line="184" selection-start-column="388" selection-end-line="184" selection-end-column="388" />
           <folding />
         </state>

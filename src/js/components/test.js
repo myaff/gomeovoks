@@ -20,6 +20,7 @@ let pages = {
 let carousel = $(".owl-carousel.carousel--test");
 let testCtrl = $('.js-test-ctrl');
 let test = $('.js-test');
+let testCard = $('.js-test-card');
 let animCtrl = $('.js-test-scale-pin');
 let animCtrlNum = $('.js-test-scale-num');
 let counter = {var: 0};
@@ -140,6 +141,16 @@ function init(){
 		$(this).addClass('is-active');
 		processTest(this, isLastSlide());
 	});
+	
+	if (Main.DeviceDetection.isTouch()){
+		testCard.on('click', function() {
+			$(this).addClass('focused');
+		});
+	} else {
+		testCard.on('mouseover', function() {
+			$(this).addClass('focused');
+		});
+	}
 	
 }
 
