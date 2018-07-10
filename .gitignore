@@ -1,0 +1,30 @@
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# Backpack build
+build
+
+# Design, raw materials, screenshots etc...
+design
+
+# Assets build
+assets/icons/
+
+# Main css
+assets/css/main.css
+static/video/
+
+#node
+node_modules/
+
+#design
+design/

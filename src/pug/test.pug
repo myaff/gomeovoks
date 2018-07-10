@@ -1,0 +1,36 @@
+extends template
+
+prepend page
+	- var layout = 'test';
+	- var currentPage = 'test';
+
+block content
+	.page.page--test
+		+chm.test-chm
+		.l-container
+			.test.js-test
+				.test__carousel.owl-carousel.carousel--test
+					each item, index in test
+						.test__q
+							.test__header
+								.test__number
+									.num= index+1
+									.len= '/' + test.length
+								.test__title !{item.q}
+							.test__variants
+								.l-flex-noBottom
+									each v, key in item.vs
+										.l-col-3
+											.test-card
+												.test-card__img: img(src=v.img, alt="")
+												.test-card__content
+													.test-card__text !{key+1 + ". " + v.text}
+													.btn.btn--small.test-card__ctrl.js-test-ctrl(data-key=v.value) Выбрать
+				.test-scale
+					.test-scale__line
+					.test-scale__pin-wrapper
+						.test-scale__pin.js-test-scale-pin
+							.test-scale__img
+							.test-scale__num
+								span.js-test-scale-num 0
+								span %

@@ -1,0 +1,47 @@
+.header {
+	fixed(0px, 0px);
+	width: 100vw;
+	z-index: 9;
+	background: $dark;
+	color: white;
+	
+	.layout & {
+		width: 100vw;
+	}
+	
+	&__content {
+		padding: 20px 0;
+		flexy(space-between, center);
+		z-index: 2;
+	}
+	
+	&__logo,
+	&__text {
+		line-height: 1.25rem;
+		vertical-align: middle;
+	}
+	
+	&__text {
+		font: 600 1rem/1 $font-util;
+		text-transform: uppercase;
+		text-align: right;
+	}
+	
+	&__logo {
+		&--maxim {
+			flex: 0 0 5rem;
+			
+			.icon {
+				size(5rem, 1.25rem);
+			}
+		}
+		
+		.text {
+			font: 400 1.5rem/1.25rem $font-util;
+			text-transform: uppercase;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+	
+}

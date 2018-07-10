@@ -1,0 +1,55 @@
+.result {
+	padding-top: 200px;
+	
+	&__box {
+		background: url("../img/noise.png") center repeat;
+	}
+	
+	&__card {
+		padding: 3rem 2.5rem 6.25rem;
+		margin-top: -2.5rem;
+		margin-bottom: 3rem;
+		z-index: 3;
+		
+		for $key, $color in $color-map {
+			&--{$key} {
+				background: $color;
+			}
+		}
+	}
+	
+	&__hand {
+		margin-top: -150px;
+		z-index: 4;
+		
+		img {
+			display: block;
+		}
+	}
+	
+	&__title {
+		padding: 1.25rem 2.5rem;
+		margin-bottom: 2.5rem;
+		background: $dark;
+		color: $white;
+		font: 50px/1 $font-base;
+		
+		.num {
+			margin-right: 1rem;
+			
+			for $key, $color in $color-map {
+				^[0]__card--{$key} & {
+					color: $color;
+				}
+			}
+		}
+	}
+	&__text {
+		font: 400 22px/1.36 $font-base;
+		color: $dark;
+		
+		^[0]__card--red & {
+			color: $white;
+		}
+	}
+}

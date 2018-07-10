@@ -1,0 +1,28 @@
+extends template
+
+prepend page
+	- var layout = 'result';
+	- var currentPage = 'result-green';
+
+block content
+	- var result = results.green;
+	.page.page--result
+		.result
+			+chm.result-chm
+			.result__box
+				.l-container
+					.l-flex-noBottom-center
+						.l-col-8
+							.result__card(class="result__card--" + result.key)
+								.result__title
+									span.num !{result.title.num}
+									span.text !{result.title.text}
+								.result__text !{result.text}
+			.l-container
+				.l-flex-noBottom-bottom
+					.l-col-6
+						+social(true, true)
+					.l-col-6
+						.result__hand: img(src="build/img/hand-res.png", alt="")
+		include parts/product
+		include parts/warn

@@ -1,0 +1,123 @@
+.social {
+
+	flexy(center, center, row, nowrap);
+	color: $dark;
+	padding-bottom: 2rem;
+	
+	&--inline {
+		flex-wrap: nowrap;
+	}
+	
+	&__link {
+		display: block;
+		font-size: 1.25rem;
+		line-height: 1;
+		color: white;
+		transition: color 0.2s;
+		
+		{hover-focus-active} {
+			color: white;
+			text-decoration: none;
+		}
+		@media $smWidth {
+			font-size: (32*100/640)vw;
+		}
+	}
+	&__link + &__link {
+		margin-left: 2rem;
+	}
+	
+	&__text {
+		font: normal 15px/1 $font-base;
+		text-transform: lowercase;
+		@media $mobile {
+			display: none;
+		}
+	}
+	
+	&__text,
+	&__icon {
+		vertical-align: middle;
+	}
+	&__icon {
+		padding: 0.325rem;
+	}
+	
+	&__title {
+		width: 100%;
+		font-size: 15px;
+		text-align: left;
+		margin: 0 auto 1.5rem;
+	}
+	&--inline &__title {
+		width: auto;
+		max-width: 300px;
+		font-size: 30px;
+		line-height: 1.33;
+		text-align: left;
+		margin: 0;
+		margin-right: 2rem;
+		text-transform: none;
+	}
+	
+	&__delimiter {
+		size(5rem, 1px);
+		background: currentColor;
+		margin: 0 1.25rem;
+	}
+	
+}
+.ya-share2 {
+
+	&__list {
+		padding: 0;
+		margin: 0;
+		flexy(flex-start, center, row, nowrap);
+	}
+	
+	&__item {
+		display: block;
+		margin: 0 0.4rem;
+		@media $mobile {
+			margin: 0 1rem;
+		}
+	}
+	&__link {
+		display: block;
+		circle(4rem, 0.5rem);
+		flex: 0 0 4rem;
+		font-size: 3rem;
+		line-height: 1;
+		color: $white;
+		background: $dark;
+		transition: color 0.2s;
+		
+		{hover-focus-active} {
+			color: white;
+			text-decoration: none;
+		}
+		@media $smWidth {
+			font-size: (32*100/640)vw;
+		}
+	}
+	
+	&__title {
+		display: none;
+	}
+	
+	&__title,
+	&__badge {
+		vertical-align: middle;
+	}
+	&__badge,
+	&__icon,
+	.icon {
+		display: block;
+		size(100%);
+		box-sizing: border-box;
+	}
+	&__icon {
+		padding: 0.75rem;
+	}
+	
+}

@@ -1,0 +1,14 @@
+include ../mixins
+.product
+	+chm.product-chm
+	.l-container
+		.l-flex-noBottom
+			.l-col-6
+				.product__text !{text.res[0]}
+				.product__img.product__img--0: img.l-float--right(src="build/img/hand-gomeovoks.png", alt="Гомеовокс")
+			.l-col-66
+				.product__img.product__img--1: img.l-float--left(src="build/img/hand.png", alt="")
+				.product__text !{text.res[1]}
+		.l-flex-noBottom
+			.l-col-6
+				+social(true, true)

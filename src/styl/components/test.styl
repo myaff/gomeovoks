@@ -1,0 +1,149 @@
+.test {
+	perspective: 1200;
+	transform-style: preserve-3d;
+	height: calc(100vh - 60px);
+	
+	&__header {
+		flexy(flex-start, center);
+		height: vh(260);
+	}
+	&__number {
+		flex: 0 0 vh(200);
+		flexy(flex-start, center);
+		
+		.num {
+			flex: 0 0 vh(100);
+			size(vh(100));
+			flexy(center, center);
+			background: $dark;
+			color: $white;
+			font-size: vh(80);
+			line-height: 1;
+		}
+		.len {
+			flex: 1 1 100%;
+			padding: vh(20);
+			font-size: vh(40);
+			color: $dark;
+		}
+	}
+	&__title {
+		flex: 1 1 100%;
+		font-size: vh(40);
+		line-height: 1.25;
+		color: $dark;
+	}
+	
+	&__variants {
+		height: vh(536);
+	}
+	
+	&-card {
+		size(100%, vh(536));
+		overflow: hidden;
+		transform-style: preserve-3d;
+		
+		&__img {
+			absolute(0px, 0px);
+			size(100%);
+			z-index: 2;
+			backface-visibility: hidden;
+			
+			img {
+				absolute(50%, 50%);
+				transform: translate(-50%, -50%);
+				min-size(100%);
+				object-fit: cover;
+			}
+		}
+		
+		&__content {
+			absolute(0px, 0px);
+			size(100%);
+			background: $white;
+			color: $dark;
+			border: 3px solid $black;
+			padding: vh(20);
+			padding-bottom: vh(100);
+			
+			> div {
+				transform: scaleX(-1);
+			}
+		}
+		
+		&__img,
+		&__content {
+			transition: transform 0.5s;
+		}
+		&:hover &__img,
+		&:hover &__content {
+			transform: rotateY(180deg);
+		}
+		&__text {
+			font: bold vh(25)/1.6 $font-base; 
+		}
+		&__ctrl {
+			absolute(0, 1.25rem, 1.25rem, 1.25rem);
+			display: block;
+			
+			&.is-active {
+				pointer-events: none;
+			}
+		}
+	}
+}
+
+.test-scale {
+	$green = #73ff6c;
+	$yellow = #fffd6c;
+	$red = #ff6c6c;
+	
+	size(100%, vh(140));
+	absolute(0, 0px, 0px);
+	
+	&__line {
+		size(100%, vh(10));
+		absolute(50%, 0px);
+		margin-top: vh(-5);
+		background: linear-gradient(to right, $green 20%, $yellow 50%, $red 80%);
+		
+		&::before,
+		&::after {
+			content: "";
+			display: block;
+			size(2.5rem, vh(14));
+			absolute(50%);
+			transform: translateY(-50%);
+			transform-origin: center;
+			background: $white;
+		}
+		
+		&::before {
+			left: calc((100% - 5rem) / 3);
+		}
+		&::after {
+			right: calc((100% - 5rem) / 3);
+		}
+	}
+	&__pin-wrapper {
+		absolute(0px, vh(40));
+		right: vh(40);
+		size(auto, 100%);
+	}
+	&__pin {
+		size(vh(84));
+		absolute(50%, 0%);
+		transform: translate(-50%, -50%);
+	}
+	&__img {
+		circle(100%);
+		absolute(0px, 0px);
+		background: url("../img/scale-img.png") center no-repeat;
+		background-size: cover;
+	}
+	&__num {
+		absolute(0px, 100%);
+		font: bold vh(25)/1 $font-base;
+		color: $dark;
+	}
+}

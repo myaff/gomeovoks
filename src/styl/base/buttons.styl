@@ -1,0 +1,119 @@
+.btn {
+  display: inline-block;
+  font: bold vh(25)/1 $font-util;
+  text-align: center;
+  vertical-align: middle;
+  padding: vh(12.5) vh(60);
+  border: vh(3) solid currentColor;
+  border-radius: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  box-shadow: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: transparent;
+  color: $dark;
+  
+  {hover-focus-acitve} {
+    outline: 0;
+  }
+  
+  .no-touch &:hover {
+    background: white;
+    color: black;
+  }
+  .touch &:active {
+    background: white;
+    color: black;
+  }
+  
+  // **** sizes ****
+  &--small {
+    font-size: vh(16);
+    padding: vh(11) vh(16) vh(12);
+  }
+  &--big {
+    padding: 20px;
+  }
+  
+  // **** themes  ****
+  &--primary {
+    color: $white;
+    background: $primary;
+    border-color: transparent;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: darken($primary, 20%);
+      border-color: transparent;
+    }
+  }
+  &--secondary {
+    color: white;
+    background: #01426a;
+    border-color: transparent;
+    
+    {hover-focus-active} {
+      color: $black;
+      background: darken(#01426a, 20%);
+      border-color: transparent;
+    }
+  }
+  &--primary-outline {
+    color: $primary;
+    background: transparent;
+    border-color: $primary;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $primary;
+    }
+  }
+  &--secondary-outline {
+    color: $black;
+    background: transparent;
+    border-color: $black;
+    
+    {hover-focus-active} {
+      color: $white;
+      background: $black;
+    }
+  }
+  
+  &--plain {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    font-size: 14px;
+    min-width: 0;
+    
+    background: transparent;
+    color: inherit;
+  }
+  
+  &--block {
+    display: block;
+    width: 100%;
+  }
+  
+  &--mwide {
+    @media $mobile {
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  &--link {
+    font-weight: normal;
+    font-size: inherit;
+    color: $primary;
+    text-transform: none;
+    padding: 0;
+    background: none;
+  }
+  
+  .icon + span {
+    margin-left: 1em;
+  }
+}
