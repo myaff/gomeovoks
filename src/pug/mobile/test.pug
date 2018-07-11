@@ -21,7 +21,7 @@ block content
 									each v, key in item.vs
 										.l-col-6
 											.test-card.js-test-card
-												.test-card__img: img(src='../' + v.img, alt="")
+												.test-card__img: img(src='../' + v.imgMobile, alt="")
 												.test-card__content
 													.test-card__text !{key+1 + ". " + v.text}
 													.test-card__ctrl.js-test-ctrl(data-key=v.value)

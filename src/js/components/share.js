@@ -20,10 +20,10 @@ function init() {
   Ya.share2('share', {
     content: {
       url: window.location.href,
-      title: 'Aqua Kenzo',
+      title: 'Узнай, как не потерять голос после ЧМ?',
       description: "",
       //image: 'build/img/share.jpg'
-      image: 'http://nioxin30days.elle.ru/build/img/share.jpg'
+      image: 'http://homeovox.maximonline.ru/share.jpg'
     },
     theme: {
       services: 'vkontakte,facebook,twitter',
@@ -36,5 +36,17 @@ function init() {
       }
     }
   });
+
+    $('.ya-share2__item_service_twitter').on('click', function () {
+        ga('send', 'event', 'share', 'click', 'click share tw');
+    });
+
+    $('.ya-share2__item_service_facebook').on('click', function () {
+        ga('send', 'event', 'share', 'click', 'click share fb');
+    });
+
+    $('.ya-share2__item_service_vkontakte').on('click', function () {
+        ga('send', 'event', 'share', 'click', 'click share vk');
+    });
 }
 module.exports = {init};

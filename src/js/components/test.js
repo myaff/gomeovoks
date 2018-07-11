@@ -10,6 +10,8 @@ let result = {
 	"100": 0
 };
 
+let q = 0;
+
 let pages = {
 	"0": "green",
 	"30": "yellow",
@@ -42,6 +44,8 @@ function isLastSlide() {
 function processTest(el, isLastSlide = false) {
 	let key = $(el).attr('data-key');
 	result[key] += 1;
+	q += 1;
+	ga('send', 'event', 'question', 'click', 'question-' + q);
 	if (!isLastSlide) {
 		showNext([el]);
 		if (Main.DeviceDetection.isMobileVersion()) {
@@ -125,6 +129,7 @@ function getPage(answer) {
 function showResult(result) {
 	let answer = calculateResult(result);
 	let page = getPage(answer);
+	ga('send', 'event', 'result', 'click', 'result-' + pages[answer]);
 	setTimeout(function () {
 		window.location.href = page;
 	}, 500);
