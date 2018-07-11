@@ -1,15 +1,31 @@
 .test {
 	perspective: 1200;
 	transform-style: preserve-3d;
-	height: calc(100vh - 60px);
+	height: calc(100vh - 3.75rem);
+	
+	.layout--mobile & {
+		width: 100vw;
+		margin: 0 calc((100vw - 100%) / -2);
+	}
 	
 	&__header {
 		flexy(flex-start, center);
 		height: vh(260);
+		
+		.layout--mobile & {
+			align-items: flex-start;
+			min-height: 10rem;
+			height: calc(100vh - 100vw - 3.7rem);
+			padding: 1.25rem;
+		}
 	}
 	&__number {
 		flex: 0 0 vh(200);
 		flexy(flex-start, center);
+		
+		.layout--mobile & {
+			flex-basis: 7.5rem;
+		}
 		
 		.num {
 			flex: 0 0 vh(100);
@@ -19,12 +35,23 @@
 			color: $white;
 			font-size: vh(80);
 			line-height: 1;
+			
+			.layout--mobile & {
+				flex-basis: 3.75rem;
+				size: 3.75rem;
+				font-size: 3rem;
+			}
 		}
 		.len {
 			flex: 1 1 100%;
 			padding: vh(20);
 			font-size: vh(40);
 			color: $dark;
+			
+			.layout--mobile & {
+				font-size: 1.5rem;
+				padding: 0.75rem;
+			}
 		}
 	}
 	&__title {
@@ -32,16 +59,28 @@
 		font-size: vh(40);
 		line-height: 1.25;
 		color: $dark;
+		
+		.layout--mobile & {
+			font-size: vw(28, 640);
+		}
 	}
 	
 	&__variants {
 		height: vh(536);
+		
+		.layout--mobile & {
+			size(100vw);
+		}
 	}
 	
 	&-card {
 		size(100%, vh(536));
 		overflow: hidden;
 		transform-style: preserve-3d;
+		
+		.layout--mobile & {
+			height: 50vw;
+		}
 		
 		&__img {
 			absolute(0px, 0px);
@@ -63,8 +102,16 @@
 			background: $white;
 			color: $dark;
 			border: 3px solid $black;
-			padding: vh(20);
-			padding-bottom: vh(100);
+			
+			.layout--desktop & {
+				padding: vh(20);
+				padding-bottom: vh(100);
+			}
+			
+			.layout--mobile & {
+				padding: 1.25rem;
+				border-width: 4px;
+			}
 			
 			> div {
 				transform: scaleX(-1);
@@ -81,10 +128,21 @@
 		}
 		&__text {
 			font: bold vh(25)/1.6 $font-base; 
+			
+			.layout--mobile & {
+				font-size: vw(28, 640);
+			}
 		}
 		&__ctrl {
 			absolute(0, 1.25rem, 1.25rem, 1.25rem);
 			display: block;
+			
+			.layout--mobile & {
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
 			
 			&.is-active {
 				pointer-events: none;
@@ -101,49 +159,71 @@
 	size(100%, vh(140));
 	absolute(0, 0px, 0px);
 	
-	&__line {
-		size(100%, vh(10));
-		absolute(50%, 0px);
-		margin-top: vh(-5);
-		background: linear-gradient(to right, $green 20%, $yellow 50%, $red 80%);
-		
-		&::before,
-		&::after {
-			content: "";
-			display: block;
-			size(2.5rem, vh(14));
-			absolute(50%);
-			transform: translateY(-50%);
-			transform-origin: center;
-			background: $white;
+	.layout--mobile & {
+		size(3.75rem, 1.25rem);
+		top: 90px;
+		left: 1.25rem;
+		bottom: auto;
+	}
+	
+	.layout--desktop {
+		&__line {
+			size(100%, vh(10));
+			absolute(50%, 0px);
+			margin-top: vh(-5);
+			background: linear-gradient(to right, $green 20%, $yellow 50%, $red 80%);
+			
+			&::before,
+			&::after {
+				content: "";
+				display: block;
+				size(2.5rem, vh(14));
+				absolute(50%);
+				transform: translateY(-50%);
+				transform-origin: center;
+				background: $white;
+			}
+			
+			&::before {
+				left: calc((100% - 5rem) / 3);
+			}
+			&::after {
+				right: calc((100% - 5rem) / 3);
+			}
 		}
-		
-		&::before {
-			left: calc((100% - 5rem) / 3);
+		&__pin-wrapper {
+			absolute(0px, vh(40));
+			right: vh(40);
+			size(auto, 100%);
 		}
-		&::after {
-			right: calc((100% - 5rem) / 3);
+		&__pin {
+			size(vh(84));
+			absolute(50%, 0%);
+			transform: translate(-50%, -50%);
+		}
+		&__img {
+			circle(100%);
+			absolute(0px, 0px);
+			background: url("../img/scale-img.png") center no-repeat;
+			background-size: cover;
+		}
+		&__num {
+			absolute(0px, 100%);
+			font: bold vh(25)/1 $font-base;
+			color: $dark;
 		}
 	}
-	&__pin-wrapper {
-		absolute(0px, vh(40));
-		right: vh(40);
-		size(auto, 100%);
-	}
-	&__pin {
-		size(vh(84));
-		absolute(50%, 0%);
-		transform: translate(-50%, -50%);
-	}
-	&__img {
-		circle(100%);
-		absolute(0px, 0px);
-		background: url("../img/scale-img.png") center no-repeat;
-		background-size: cover;
-	}
-	&__num {
-		absolute(0px, 100%);
-		font: bold vh(25)/1 $font-base;
-		color: $dark;
+	
+	.layout--mobile & {
+		&__line {
+			size(100%);
+			transition: background 0.5s;
+			
+			for $key, $color in $color-map {
+				&[data-key={$key}] {
+					background: $color;
+				}
+			}
+		}
 	}
 }

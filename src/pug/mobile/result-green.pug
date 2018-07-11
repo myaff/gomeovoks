@@ -1,0 +1,20 @@
+extends template
+
+prepend page
+	- var layout = 'result';
+	- var currentPage = 'result-green';
+
+block content
+	- var result = results.green;
+	.page.page--result
+		.result
+			.result__box
+				.l-container
+					.result__card(class="result__card--" + result.key)
+						.result__title
+							span.num !{result.title.num}
+							span.text !{result.title.text}
+						.result__text !{result.text}
+					.result__hand: img(src="../build/img/hand-res.png", alt="")
+		include parts/product
+		include parts/warn

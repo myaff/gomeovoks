@@ -1,0 +1,21 @@
+extends template
+
+prepend page
+	- var layout = 'home';
+	- var currentPage = 'home';
+
+block content
+	.page.page--home
+		.page__content
+			.home-main
+				.l-container
+					.home-main__content
+						.home-main__title !{text.home.title}
+						a.home-main__btn.btn(href="test.html") Узнать
+					.home-main__img
+						img(src="../build/img/hand-card.png", alt="")
+						.text !{text.home.test}
+			.home-back
+				.l-container
+					each item, index in text.home.content
+						.home-back__text(class="home-back__text--" + index) !{item}

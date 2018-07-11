@@ -1,0 +1,29 @@
+extends template
+
+prepend page
+	- var layout = 'test';
+	- var currentPage = 'test';
+
+block content
+	.page.page--test
+		.l-container
+			.test.js-test
+				.test__carousel.owl-carousel.carousel--test
+					each item, index in test
+						.test__q
+							.test__header
+								.test__number
+									.num= index+1
+									.len= '/' + test.length
+								.test__title !{item.q}
+							.test__variants
+								.l-flex-noGutter
+									each v, key in item.vs
+										.l-col-6
+											.test-card.js-test-card
+												.test-card__img: img(src='../' + v.img, alt="")
+												.test-card__content
+													.test-card__text !{key+1 + ". " + v.text}
+													.test-card__ctrl.js-test-ctrl(data-key=v.value)
+				.test-scale
+					.test-scale__line.js-test-indicator(data-key="green")

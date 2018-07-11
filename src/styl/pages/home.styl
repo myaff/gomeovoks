@@ -10,10 +10,23 @@
 				size(100%, vh(500));
 				background: url("../img/noise.png") center repeat;
 				flexy(flex-start, center);
+				
+				.layout--mobile & {
+					height: 100%;
+					padding: 6rem 1.25rem 2.5rem;
+					align-items: flex-start;
+				}
 			}
 			&-back {
 				fixed(0px, 0px);
 				size(100%);
+				
+				.layout--mobile & {
+					height: 500px;
+					top: auto;
+					bottom: 0;
+				}
+				
 			}
 			&-chm {
 				fixed(0px, 0px);
@@ -31,11 +44,23 @@
 		line-height: 1.16;
 		margin-bottom: vh(30);
 		color $dark;
+		
+		.layout--mobile & {
+			font-size: 3rem;
+			padding-right: 10vw;
+			line-height: 1.25;
+			margin-bottom: 2rem;
+		}
 	}
 	&__img {
 		fixed(0, 50%, 0px);
 		margin-left: -5rem;
 		height: vh(790);
+		
+		.layout--mobile & {
+			height: 480px;
+			margin-left: -8rem;
+		}
 		
 		img {
 			display: block;
@@ -47,6 +72,16 @@
 			font-size: vh(16);
 			line-height: 1.13;
 			transform: rotate(-12deg);
+			
+			.layout--mobile & {
+				font-size: 1.25rem;
+				color: $dark;
+				top: auto;
+				bottom: 8rem;
+				left: 80%;
+				width: 16.5rem;
+				transform: rotate(2deg);
+			}
 		}
 	}
 }
@@ -62,27 +97,57 @@
 		absolute(0, 50%);
 		transform-origin: center;
 		
+		.layout--mobile & {
+			font-size: 1.25rem;
+		}
+		
 		&--0 {
 			top: 10vh;
 			margin-left: -392px;
 			transform: rotate(-23deg);
+			
+			.layout--mobile & {
+				top: 5.5rem;
+				left: 1.25rem;
+				margin: 0;
+			}
 		}
 		&--1 {
 			top: 86.8vh;
 			margin-left: -442px;
 			transform: rotate(23deg);
+			
+			.layout--mobile & {
+				top: 12.5rem;
+				left: 0.5rem;
+				margin: 0;
+				transform: rotate(-35deg);
+			}
 		}
 		&--2 {
 			top: 15.4vh;
 			margin-left: 282px;
 			transform: rotate(7deg);
 			width: 410px;
+			
+			.layout--mobile & {
+				display: none;
+			}
 		}
 		&--3 {
 			top: 43.8vh;
 			margin-left: 346px;
 			transform: rotate(12deg);
 			width: 230px;
+			
+			.layout--mobile & {
+				top: 1rem;
+				right: 1.25rem;
+				left: auto;
+				width: 210px;
+				margin: 0;
+				transform: rotate(1deg);
+			}
 		}
 	}
 }

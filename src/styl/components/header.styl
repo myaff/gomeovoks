@@ -25,6 +25,17 @@
 		font: 600 1rem/1 $font-util;
 		text-transform: uppercase;
 		text-align: right;
+		
+		.layout--mobile & {
+			display: none;
+		}
+		.layout--mobile.layout--home & {
+			display: block;
+			absolute(6.25rem);
+			right: 0;
+			color: $black;
+			opacity: 0.3;
+		}
 	}
 	
 	&__logo {
@@ -41,6 +52,10 @@
 			text-transform: uppercase;
 			text-align: center;
 			vertical-align: middle;
+		}
+		
+		.layout--mobile & {
+			opacity: 0.5;
 		}
 	}
 	

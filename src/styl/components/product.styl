@@ -1,15 +1,30 @@
 .product {
-	padding-top: 90px;
 	background: url("../img/noise.png") center repeat;
+	
+	.layout--desktop & {
+		padding-top: 90px;
+	}
+	.layout--mobile & {
+		padding: 2.5rem;
+	}
 	
 	&__text {
 		font: 400 25px/1.48 $font-base;
 		color: $dark;
 		margin: 2rem 0;
+		
+		.layout--mobile & {
+			margin: 0;
+		}
+	}
+	
+	&__socials {
+		margin: 3.5rem auto;
 	}
 	
 	&__img {
-		&::after {
+	
+		.layout--desktop &::after {
 			content: "";
 			display: block;
 			float: none;
@@ -22,7 +37,18 @@
 		&--1 {
 			margin-left: 150px;
 		}
+		
+		.layout--mobile & {
+			margin: 1.5rem calc((100vw - 100%) / -2);
+			width: 100vw;
+			
+			img {
+				display: block;
+				size(100%, auto);
+			}
+		}
 	}
+	
 }
 
 .product-chm {

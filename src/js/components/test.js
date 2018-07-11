@@ -23,6 +23,7 @@ let test = $('.js-test');
 let testCard = $('.js-test-card');
 let animCtrl = $('.js-test-scale-pin');
 let animCtrlNum = $('.js-test-scale-num');
+let animIndicator = $('.js-test-indicator');
 let counter = {var: 0};
 
 function clearResult () {
@@ -41,10 +42,13 @@ function isLastSlide() {
 function processTest(el, isLastSlide = false) {
 	let key = $(el).attr('data-key');
 	result[key] += 1;
-	//counter.var = key;
 	if (!isLastSlide) {
 		showNext([el]);
-		animTest(key);
+		if (Main.DeviceDetection.isMobileVersion()) {
+			animTestIndicator(key);
+		} else {
+			animTest(key);
+		}
 	} else {
 		animTest(key);
 		setTimeout(function () {
@@ -87,6 +91,11 @@ function animTest(key, onCompleteFunc, onCompleteFuncParams) {
 		delay: -1
 	}));
 	tl.add(tweensArr, 1);
+}
+
+function animTestIndicator(key) {
+	let res = pages[key];
+	animIndicator.attr("data-key", res);
 }
 
 function showNext(el) {

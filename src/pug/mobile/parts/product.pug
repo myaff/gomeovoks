@@ -1,0 +1,10 @@
+include ../mixins
+.product
+	.l-container
+		.product__texts
+			for item in text.res
+				.product__text !{item}
+		+social(true, false).product__socials
+		.product__img: img(src="../build/img/hands-gomeovoks.png", alt="Гомеовокс")
+		.tp-text--center
+				a.btn.btn--dark.btn--big.mt-1(href="test.html") Пройти тест еще раз
