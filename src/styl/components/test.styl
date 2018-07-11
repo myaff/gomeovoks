@@ -6,6 +6,7 @@
 	.layout--mobile & {
 		width: 100vw;
 		margin: 0 calc((100vw - 100%) / -2);
+		height: auto;
 	}
 	
 	&__header {
@@ -69,6 +70,7 @@
 		
 		.layout--mobile & {
 			size(100vw, calc(100vh - 13rem - 4rem));
+			min-height: 100vw;
 		}
 	}
 	
@@ -79,6 +81,7 @@
 		
 		.layout--mobile & {
 			height: calc((100vh - 13rem - 4rem) / 2);
+			min-height: 50vw;
 		}
 		
 		&__img {
