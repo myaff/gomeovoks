@@ -42,10 +42,10 @@ $(document).ready(function(){
 			});
 	}
 	
-	let start = newDate();
+	let start = new Date();
 	
 	$(window).unload(function() {
-		let end = newDate();
+		let end = new Date();
 		let res = Math.round((end - start) / 1000);
 		ga('send', 'event', 'time', 'click', 'time is ' + res);
 	});
